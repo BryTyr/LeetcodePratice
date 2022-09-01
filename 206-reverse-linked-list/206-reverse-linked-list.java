@@ -10,10 +10,12 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        // Edge cases
-        if(head == null || head.next == null) return head;
         
-        ListNode curr = head, prev = null, next = null;
+        // edge cases
+        if(head == null || head.next == null)
+            return head;
+        
+        ListNode prev = null, curr = head, next = null;
         
         while(curr != null){
             next = curr.next;
@@ -23,5 +25,5 @@ class Solution {
         }
         
         return prev;
-    }
+   }
 }
